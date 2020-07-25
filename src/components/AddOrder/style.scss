@@ -1,0 +1,30 @@
+.addform{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  .addform__group{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .addform__group__box{
+      &:not(:last-child){
+        margin-right: 10px;
+      }
+    }
+    input{
+      width: 100%;
+      border:1.5px solid black;
+      padding:5px;
+    }
+  }
+  button{
+    cursor: pointer;
+    width: 100%;
+    margin-top:20px;
+    background-color: black;
+    color: white;
+    padding:15px;
+    border: none;
+    font-weight: bold;
+  }
+}

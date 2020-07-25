@@ -1,13 +1,34 @@
-import React from 'react';
-import './App.scss';
+import React, { Component } from 'react';
+import './components/App.scss';   // app style
 
-function App() {
-  return (
+import AddOrder from './components/AddOrder'
+import OrderList from './components/OrderList'
+
+class App extends Component {
+  state = {
+    drinkList:[]
+  }
+  setDrinkList = (arr) => {
+    this.setState({
+      drinkList: [...arr],
+    })
+  }
+  render() {
+    const {drinkList} = this.state
+    return (
     <div className="App">
-      <h1 className="text-center">Daily Drinks App</h1>
-
+      <div className="container">
+        <h1 className="title text-center">Daily Drinks App 🧃</h1>
+        <AddOrder 
+          listArray={drinkList} 
+          setDrinkList={this.setDrinkList}
+        />
+        <div className="crossline" />
+        <OrderList drinkList="drinkList" />
+      </div>
     </div>
-  );
+    );
+  }
 }
 
 export default App;

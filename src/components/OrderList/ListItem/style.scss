@@ -1,0 +1,31 @@
+.list__box__item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  div{
+    position: relative;
+    margin:0px 10px;
+  }
+  
+  .department{
+    // flex-grow: 1;
+    width: 15%;
+  }
+  .name{
+    // flex-grow: 3;
+    width: 15%;
+  }
+  .drinkName{
+    // flex-grow: 3;
+    width: 30%;
+  }
+  .detail{
+    // flex-grow: 3;
+    width: 30%;
+  }
+  .price{
+    // flex-grow: 1;
+    width: 10%;
+  }
+}/* end list box item */

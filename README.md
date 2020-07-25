@@ -1,17 +1,32 @@
-# DailyDrinks App
+# DailyDrinks App 🧃
 
----
+### 📌 A quick and small previous test from 17-media.
 
-### A quick and small previous test from 17-media.
+### 
 
+### 
 
+### 🍛 Build This App Environment
 
+- An Unix-like system (macOS).
 
+- Node.js 10+ with yarn 1.22.
 
+- A fine-tuned editor (vscode or another editor.)
 
+### 🚀 Quick Start
 
+To run this project website locally,
 
-### Available Scripts
+1. clone this repository first.
+
+2. Under project root, run `yarn` to install all dependencies.
+
+3. Make sure that `localhost:3000` port is available 
+
+4. Run `yarn start`. It would launch the web app with your default browser.
+
+### 🖥 Available Scripts
 
 ### `yarn start`
 
