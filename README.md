@@ -2,6 +2,10 @@
 
 ### 📌 A quick and small previous test from 17-media.
 
+## 🔲 Online CodeSandBox Demo 🔳
+
+https://codesandbox.io/s/daily-drinks-5s2fx
+
 ## 📚 Documentation
 
 [Note Link](src/doc/notes.md)
