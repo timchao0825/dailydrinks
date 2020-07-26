@@ -5,27 +5,21 @@
   width: 100%;
   div{
     position: relative;
-    margin:0px 10px;
+    margin:0px 5px;
   }
-  
   .department{
-    // flex-grow: 1;
-    width: 15%;
+    width: 20%;
   }
   .name{
-    // flex-grow: 3;
-    width: 15%;
+    width: 20%;
   }
   .drinkName{
-    // flex-grow: 3;
-    width: 30%;
+    width: 25%;
   }
   .detail{
-    // flex-grow: 3;
-    width: 30%;
+    width: 25%;
   }
   .price{
-    // flex-grow: 1;
     width: 10%;
   }
 }/* end list box item */

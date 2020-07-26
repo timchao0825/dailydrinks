@@ -1,0 +1,35 @@
+.list__box__item__editform{
+  display: none;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translateY(-50%);
+  .list__box__item__editform__text{
+    width: calc(100% - 50px);
+    border:1px solid black;
+  }
+  .list__box__item__editform__textarea{
+    width: calc(100% - 50px);
+    border:1px solid black;
+  }
+  .list__box__item__editform__submit{
+    position: absolute;
+    right: 0px;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    background: black;
+    color: white;
+    font-weight: bold;
+  }
+
+  &.is-show{
+    display: flex;
+    z-index: 10;
+  }
+}/* end list box item editform */

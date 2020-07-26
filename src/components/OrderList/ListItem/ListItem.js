@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import Editform from '../EditForm'; // import editform
-import './style.scss'; // import editform style
+import Editform from '../EditForm/EditForm'; 
+import './ListItem.scss';
 
-class index extends Component {
+class ListItem extends Component {
   state = {
     isEdit: false,
     inputVal: this.props.inputVal,
@@ -47,4 +47,4 @@ class index extends Component {
   }
 }
 
-export default index;
+export default ListItem;

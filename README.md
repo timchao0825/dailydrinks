@@ -2,9 +2,16 @@
 
 ### 📌 A quick and small previous test from 17-media.
 
-### 
+## 📚 Documentation
 
-### 
+[Note Link](doc/notes.md)
+[Architectrue Link](doc/architectrue.md)
+
+### 🏠 Project Information
+
+- React Framework
+
+- Simple CSS
 
 ### 🍛 Build This App Environment
 

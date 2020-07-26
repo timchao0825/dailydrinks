@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import './style.scss';
+import './AddOrder.scss';
 
-class index extends Component {
+class AddOrder extends Component {
   state={
-    list:[],
     department:'',
     name:'',
     drinkName:'',
@@ -37,18 +36,19 @@ class index extends Component {
   }
   onSubmit = (e) =>{
     e.preventDefault();
-    const id = 1 + Math.random();
     const {department , name , drinkName , note , price} = this.state;
-    const drinkList = {
+    const id = 1 + Math.random();
+    const CreateDrinkList = {
+      isChecked:false,
       id:id,
       department:department,
       name:name,
       drinkName:drinkName,
-      note:note,
       price:price,
+      note:note,
     };
-    const list = [...this.state.list];
-    list.push(drinkList);
+    const list = [...this.props.listArray];
+    list.push(CreateDrinkList);
     this.setState({
       list,
       department:'',
@@ -68,7 +68,9 @@ class index extends Component {
       >
         <div className="addform__group">
           <div className="addform__group__box">
+          <label htmlFor="Department">Department:</label>
           <input 
+            required
             onChange={this.depChange}
             type="text" 
             placeholder="Department" 
@@ -76,7 +78,9 @@ class index extends Component {
           />
           </div>
           <div className="addform__group__box">
+          <label htmlFor="Department">Name:</label>
           <input 
+            required
             onChange={this.nameChange}
             type="text" 
             placeholder="Name" 
@@ -84,27 +88,34 @@ class index extends Component {
           />
           </div>
           <div className="addform__group__box">
+          <label htmlFor="Department">Drink Name:</label>
           <input 
+            required
             onChange={this.drinkNameChange}
             type="text" 
-            placeholder="Drinkname" 
+            placeholder="Drink name" 
             value={drinkName}
           />
           </div>
-          <div className="addform__group__box">
-          <input 
-            onChange={this.noteChange}
-            type="text" 
-            placeholder="Note" 
-            value={note}
-          />
-          </div>
-          <div className="addform__group__box">
+          
+          <div className="addform__group__box last">
+          <label htmlFor="Department">Price:</label>
           <input
+            required
             onChange={this.priceChange} 
             type="text" 
             placeholder="Price" 
             value={price}
+          />
+          </div>
+          <div className="addform__group__box textarea">
+          <label htmlFor="Department">Note:</label>
+          <textarea
+            rows="3"
+            required
+            onChange={this.noteChange}
+            placeholder="Note" 
+            value={note}
           />
           </div>
         </div>
@@ -115,4 +126,4 @@ class index extends Component {
   }
 }
 
-export default index;
+export default AddOrder;

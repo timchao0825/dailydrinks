@@ -5,13 +5,28 @@
   .addform__group{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     .addform__group__box{
-      &:not(:last-child){
-        margin-right: 10px;
+      width: calc(25% - 15px);
+      &:not(.textarea){
+        margin-right: 15px;
+      }
+      &.last{
+        margin-right: 0;
+      }
+      &.textarea{
+        width: 100%;
+        margin-top: 20px;
       }
     }
     input{
+      width: 100%;
+      border:1.5px solid black;
+      padding:5px;
+    }
+    textarea{
+      resize: none;
       width: 100%;
       border:1.5px solid black;
       padding:5px;

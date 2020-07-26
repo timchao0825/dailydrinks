@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import './style.scss'; // import editform style
+import './EditForm.scss';
 
-class index extends Component {
+class EditForm extends Component {
   state = {
     inputVal:this.props.inputVal,
   }
@@ -49,4 +49,4 @@ class index extends Component {
   }
 }
 
-export default index;
+export default EditForm;

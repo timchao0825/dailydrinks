@@ -1,0 +1,64 @@
+.list__container{
+  width: 100%;
+  
+  .list__container__title{
+    background: rgba(204,204,204,0.4);
+    margin:20px 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 10px 50px;
+    .department{
+      width: 20%;
+    }
+    .name{
+      width: 20%;
+    }
+    .drink{
+      width: 25%;
+    }
+    .note{
+      width: 25%;
+    }
+    .price{
+      width: 10%;
+    }
+  }
+
+  ul.list__wrap{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  } 
+
+  .list__box{
+    box-shadow: 0 4px 2px -3px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    border:1px solid black;
+    border-radius: 5px;
+    margin:10px 0px;
+    padding: 10px 15px;
+  }
+  .list__box__checkbox{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .delete__button{
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    background-color:#ff6961;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+    display: none;
+    &.is-show{
+      display: block;
+    }
+  }
+}/* end list container */
