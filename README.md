@@ -4,8 +4,10 @@
 
 ## 📚 Documentation
 
-[Note Link](doc/notes.md)
-[Architectrue Link](doc/architectrue.md)
+[Note Link](src/doc/notes.md)
+
+
+[Architectrue Link](src/doc/architectrue.md)
 
 ### 🏠 Project Information
 
