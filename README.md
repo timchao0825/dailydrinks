@@ -6,7 +6,6 @@
 
 [Note Link](src/doc/notes.md)
 
-
 [Architectrue Link](src/doc/architectrue.md)
 
 ### 🏠 Project Information

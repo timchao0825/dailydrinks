@@ -2,7 +2,7 @@
 
 ### 1. 如何執行完成的 package
 
-請參考專案最上層的 [README.md](../README.md#-quick-start) 的 Quick Start 一節。
+請參考專案最上層的 [README.md](../../README.md#-quick-start) 的 Quick Start 一節。
 
 ### 2.思路
 
